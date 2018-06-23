@@ -1,6 +1,6 @@
 # Flask 入门
 
-###  简介
+##  简介
 Flask 是小而精的框架，如果项目的功能分支不庞大的话，推荐使用falsk。
 
 但是，这并不是说flask只能做小项目。falsk的第三方模块有很多，完全可以通过引用第三方模块打造一个不一样的“Django”。
@@ -43,10 +43,19 @@ Flask 是小而精的框架，如果项目的功能分支不庞大的话，推�
 > ctx = REquestContrxt()
 > ```
 
-3. LocalProxy
-
+3. 应用上下文管理
+> 代码流程：        
+> ```python
+> # 1   先实例一个 app_crx 对象
+> # 2   通过localStack 放到 local中
+> # 3   获取时，通过localproxy + 偏函数
+> ```
+>
 
 ## 外部组件
 1. flask-session
 2. DBUtils
 
+## wtforms
+作用：生成HTML标签 + 用户请求数据进项校验
+使用：
